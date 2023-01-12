@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dazika</title>
+    <link rel="shortcut icon" href="../imgs/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header class="headerlogoc ms-5 pt-5">
+        <img src="../imgs/df4a1361-9101-4935-885d-6186baeac291.jpg" alt="logo" class="logoc">
+    </header>
+    <div class="container-primaryc">
+        <div class="container-meio">
+            <section class="calcular">
+                <div class="calcular1 mt-5 ms-5">
+                    <h1 class="h1top  mb-5 pb-1">Descubra o valor da sua sessão!</h1>
+                    <h5 class="text-meio">Quanto quer ganhar?:
+                        <input class="inputs" id="v1" type="number" placeholder="R$" required>
+                    </h5>
+                    <h5 class="text-meio pt-3 ">Qual valor do custo da clinica?:
+                        <input class="inputs" id="v2" type="number" placeholder="R$" required>
+                    </h5>
+                    <br>
+                    <button class="botoes" onclick="somarr()">
+                        <p class="pbotao">Calcular</p>
+                    </button>
+                    <h5 class=" text-meio mt-2
+                    mb-2">Sua reserva de emergencia é:R$ <R1></R1><span id="re"></span></h5>
+                    <hr>
+                </div>
+            </section>
+            <section class="calcular">
+                <div class="calcular1 mt-5 ms-5">
+                    <br>
+                    <h5 class="text-meio pt-5">Quanto você quer ganhar?:
+                        <input class="inputs" id="n1" type="number" placeholder="R$" required />
+                        <h5 class="text-meio mt-4">Seu lucro é de:R$ <span id="lucro"></span></h5>
+                        <button class="mt-3 botoes" onclick="somar()">
+                            <p class="pbotao">Calcular</p>
+                        </button>
+                        <hr>
+                </div>
+            </section>
+            <section class="calcular">
+                <div class="calcular1 mt-5 ms-5">
+
+                    <h5 class="text-meio pt-3 pb-3">Quantas horas quer trabalhar no dia?:
+                        <input class="inputs" id="h1" type="number" placeholder="Horas" required />
+                        <h5 class="text-meio pt-3 pb-3">Quantos dias quer trabalhar por semana?:
+                            <input class="inputs" id="h2" type="number" placeholder="Dias" required />
+                            <h5 class="text-meio mt-4">Quantas horas você vai trabalhar por mês: <span
+                                    id="horasSemana"></span>
+                            </h5>
+                            <button class="mt-3 botoes" onclick="horas()">
+                                <p class="pbotao">Calcular</p>
+                            </button>
+                </div>
+                <hr>
+            </section>
+            <section class="calcular">
+                <div class="calcular1 mt-5 ms-5">
+
+                    <h5 class=" text-meio pt-5 ">Então, você deveria cobrar pela sua sessão um minimo de: R$<span
+                            id="total"></span></h5>
+
+                    <button class="botoes mt-2" onclick="geral()">
+                        <p class="pbotao">Calcular</p>
+                    </button>
+
+                </div>
+            </section>
+        </div>
+    </div>
+    <footer class="footer-c">
+        <p class="pt-4" style="text-align: center; color: white;">Feito por Lucas Casarim © Para Leticia Casarim todos
+            os direitos reservados - 2023</p>
+    </footer>
+    <script>
+        var n1 = document.querySelector('#n1')
+        var lucro = document.querySelector('#lucro')
+        var v1 = document.querySelector('#v1')
+        var v2 = document.querySelector('#v2')
+        var v3 = document.querySelector('#v3')
+        var re = document.querySelector('#re')
+        var total = document.querySelector('#total')
+        var h1 = document.querySelector('#h1')
+        var h2 = document.querySelector('#h2')
+        var horasSemana = document.querySelector('#horasSemana')
+        var lucrototal
+        var horasSemanatotal
+        var retotal
+        var totalgeral
+        function horas() {
+            horasSemanatotal = parseFloat(h1.value) * parseFloat(h2.value) * 4
+            horasSemana.innerHTML = horasSemanatotal
+        }
+        function somar() {
+            lucrototal = 0.20 * parseFloat(n1.value)
+            lucro.innerHTML = lucrototal
+        }
+        function somarr() {
+            retotal = 0.20 * parseFloat(v1.value)
+            re.innerHTML = retotal
+        }
+        function geral() {
+            const totalgeral = (parseFloat(v1.value) + parseFloat(v2.value) + parseFloat(retotal) + parseFloat(lucrototal)) / parseFloat(horasSemanatotal)
+            total.innerHTML = totalgeral
+            console.log(retotal);
+        }
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

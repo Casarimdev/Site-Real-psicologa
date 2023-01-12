@@ -1,0 +1,164 @@
+@import url('calcular.scss');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+background-color:#7FB0EC;
+}
+.header-content{
+    padding-left: 3%;
+    min-width: 100vw;
+    min-height: 10vh;
+    background-color: #3887E8;
+    display: flex;
+    align-items: center;
+}
+
+.img-logo{
+    display: none;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+
+// style calcular
+ .headerlogoc{
+    width: 200px;
+    height: 10px;
+ }
+.logoc{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    box-shadow: 0px 0px 8px 2px #0000008a;
+}
+.container-primaryc{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    
+}
+
+
+.container-meio{
+    margin-top: 4vh;
+    background-color: #002C4B;
+    color:  #94A6B4;
+    width: 40vw;
+    height: 96vh;
+    border-radius: 8px;
+    box-shadow: 0px 0px 8px 2px #0000008a;
+    padding-bottom: 20%;
+}
+
+.calcular{
+    height: 20vh;
+}
+ .h1top{
+    text-align: center;
+    
+ }
+ .botoes{
+    width: 80px;
+    height: 30px;
+    background-color: #7FB0EC;
+    border: 1px solid #002C4B;
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 0.712);
+    font-weight: bolder;
+    
+ }
+ .botoes:hover{
+    box-shadow: 0px 0px 8px 2px #0000008a;
+    background-color: #002C4B;
+ }
+
+//  Responsividade-Calcular
+@media(max-width:1320px){
+    .container-meio{
+        width: 80vw;
+        height: auto;
+    }
+
+    .h1top{
+        font-size: 30px;
+    }
+
+    .inputs{
+        width: 100px;
+    }
+    .text-meio{
+        font-size: 18px;
+    }
+}
+
+@media(max-width:742px){
+    .container-meio{
+        width: 80vw;
+        height: auto;
+    }
+
+    .h1top{
+        font-size: 25px;
+    }
+
+    .inputs{
+        width: 100px;
+    }
+    .text-meio{
+        font-size: 15px;
+    }
+}
+@media(max-width:426px){
+    .container-meio{
+        width: 80vw;
+        height: auto;
+    }
+
+    .h1top{
+        font-size: 17px;
+        margin-right: 45px;
+    }
+
+    .inputs{
+        width: 70px;
+    }
+    .text-meio{
+        font-size: 12px;
+    }
+    .botoes{
+        height: 25px;
+    }
+}
+@media(max-width:376px){
+    .container-meio{
+        width: 80vw;
+        height: auto
+    }
+    .h1top{
+        font-size: 14px;
+        padding-right: 1px;
+    }
+
+    .inputs{
+        width: 50px;
+    }
+    .text-meio{
+        font-size: 10px;
+        padding-right: 40px;
+    }
+    .botoes{
+        height: 18px;
+        width: 60px;
+    }
+    .pbotao{
+        font-size: 12px;
+    }
+}
