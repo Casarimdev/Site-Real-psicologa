@@ -1,4 +1,13 @@
-@import url("calcular.scss");
+@import url("../sass/calcular.scss");
+@import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Playfair+Display:ital@1&family=Red+Hat+Display:wght@600&display=swap");
+@font-face {
+  font-family: Haigrast;
+  src: url("../fontes/Haigrast.ttf") format(truetype);
+}
+@font-face {
+  font-family: Avenue;
+  src: url("../fontes/FontsFree-Net-Dream-Avenue.ttf") format(truetype);
+}
 * {
   margin: 0px;
   padding: 0px;
@@ -12,17 +21,36 @@ body {
 .header-content {
   padding-left: 3%;
   min-width: 100vw;
-  min-height: 10vh;
+  min-height: 15vh;
   background-color: #FFFCFC;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px 20px;
+}
+
+.leticia {
+  font-family: Haigrast;
+  font-size: 70px;
+  color: #7FB0EC;
+}
+
+.logotexto {
+  display: flex;
+  flex-direction: row;
   align-items: center;
 }
 
-.img-logo {
-  display: none;
-  width: 100px;
-  height: 100px;
+.img-logop {
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
+}
+
+.navp {
+  margin-right: 10%;
 }
 
 .headerlogoc {
