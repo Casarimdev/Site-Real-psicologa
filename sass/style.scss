@@ -21,14 +21,15 @@ $fonte5:Avenue;
 }
 
 body{
-background-color:#7FB0EC;
+background-color:c;
 overflow-x: hidden;
+background-color: #7FB0EC;
 }
 .header-content{
     padding-left: 3%;
     min-width: 100vw;
     min-height: 15vh;
-    background-color: #FFFCFC ;
+    background-image: linear-gradient(to top,#7FB0EC,#FFFF 50%);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -55,7 +56,91 @@ overflow-x: hidden;
 
 .navp{
     margin-right: 10%;
+    a{
+        color: #669ee2;
+        background-color: #94a6b400;
+    }
 }
+
+.h1-1{
+    text-align: center;
+    font-family: $fonte5;
+    font-size:80px;
+    color: #FFFF;
+}
+.h1-2{
+    margin-left: 6%;
+    margin-top: 4%;
+    font-family: $fonte5;
+    font-size:40px;
+    color: #FFFF;
+}
+.p-text{
+    width: 44vw;
+    margin-left: 10%;
+    margin-top: 1%;
+    margin-right: 0%;
+    margin-bottom: 0%;
+    font-family: $fonte5;
+    font-size:20px;
+    color: #FFFF;
+}
+
+.img-p1{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    margin-left: 12%;
+    margin-top: 0%;
+    
+}
+
+.container-secondary{
+    width: 100vw;
+    height: 60vh;
+
+    .img-2{
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    margin-left: 6%;
+    margin-top: 0%;
+    }
+
+    .p-text1{
+    width: 50vw;
+    margin-left: 5%;
+    margin-top: 7%;
+    margin-right: 0%;
+    margin-bottom: 0%;
+    font-family: $fonte3;
+    font-size:20px;
+    font-weight: 700;
+    color: #FFFF;
+    }
+    .h1-meio{
+    text-align: center;
+    font-family: $font1;
+    font-size:50px;
+    color: #FFFF;
+    }
+}
+
+.h1-3{
+text-align: center;
+font-family: $fonte5;
+font-size:70px;
+color: #002C4B;
+margin-top: 4%;
+}
+
+
+
+
+
+
+
+
 // style calcular
 
  .headerlogoc{

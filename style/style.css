@@ -1,6 +1,299 @@
+@import url("../sass/calcular.scss");
+@import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Playfair+Display:ital@1&family=Red+Hat+Display:wght@600&display=swap");
+@font-face {
+  font-family: Haigrast;
+  src: url("../fontes/Haigrast.ttf") format(truetype);
+}
+@font-face {
+  font-family: Avenue;
+  src: url("../fontes/FontsFree-Net-Dream-Avenue.ttf") format(truetype);
+}
 * {
   margin: 0px;
   padding: 0px;
+}
+
+body {
+  background-color: c;
+  overflow-x: hidden;
+  background-color: #7FB0EC;
+}
+
+.header-content {
+  padding-left: 3%;
+  min-width: 100vw;
+  min-height: 15vh;
+  background-image: linear-gradient(to top, #7FB0EC, white 50%);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px 20px;
+}
+
+.leticia {
+  font-family: Haigrast;
+  font-size: 70px;
+  color: #7FB0EC;
+}
+
+.logotexto {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.img-logop {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.navp {
+  margin-right: 10%;
+}
+.navp a {
+  color: #669ee2;
+  background-color: rgba(148, 166, 180, 0);
+}
+
+.h1-1 {
+  text-align: center;
+  font-family: Avenue;
+  font-size: 80px;
+  color: white;
+}
+
+.h1-2 {
+  margin-left: 6%;
+  margin-top: 4%;
+  font-family: Avenue;
+  font-size: 40px;
+  color: white;
+}
+
+.p-text {
+  width: 44vw;
+  margin-left: 10%;
+  margin-top: 1%;
+  margin-right: 0%;
+  margin-bottom: 0%;
+  font-family: Avenue;
+  font-size: 20px;
+  color: white;
+}
+
+.img-p1 {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  margin-left: 12%;
+  margin-top: 0%;
+}
+
+.container-secondary {
+  width: 100vw;
+  height: 60vh;
+}
+.container-secondary .img-2 {
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  margin-left: 6%;
+  margin-top: 0%;
+}
+.container-secondary .p-text1 {
+  width: 50vw;
+  margin-left: 5%;
+  margin-top: 7%;
+  margin-right: 0%;
+  margin-bottom: 0%;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+}
+.container-secondary .h1-meio {
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-size: 50px;
+  color: white;
+}
+
+.h1-3 {
+  text-align: center;
+  font-family: Avenue;
+  font-size: 70px;
+  color: #002C4B;
+  margin-top: 4%;
+}
+
+.headerlogoc {
+  width: 200px;
+  height: 10px;
+}
+
+.logoc {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+  box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.5411764706);
+}
+
+.container-primaryc {
+  width: 99vw;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.container-meio {
+  margin-top: 4vh;
+  background-color: #002C4B;
+  color: #94A6B4;
+  width: 50vw;
+  height: 96vh;
+  border-radius: 8px;
+  box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.5411764706);
+  padding-bottom: 20%;
+}
+
+.calcular {
+  height: 20vh;
+}
+
+.h1top {
+  text-align: center;
+}
+
+.botoes {
+  width: 80px;
+  height: 30px;
+  background-color: #7FB0EC;
+  border: 1px solid #002C4B;
+  border-radius: 10px;
+  color: rgba(255, 255, 255, 0.712);
+  font-weight: bolder;
+}
+
+.botoes:hover {
+  box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.5411764706);
+  background-color: #002C4B;
+}
+
+@media (max-width: 1610px) {
+  .h1top {
+    font-size: 25px;
+  }
+}
+@media (max-width: 1320px) {
+  .container-meio {
+    width: 50vw;
+    height: auto;
+  }
+  .text-meio {
+    font-size: 16px;
+  }
+}
+.h1top {
+  font-size: 30px;
+}
+
+.inputs {
+  width: 100px;
+}
+
+.text-meio {
+  font-size: 18px;
+}
+
+@media (max-width: 1110px) {
+  .container-meio {
+    width: 60vw;
+    height: auto;
+  }
+  .h1top {
+    font-size: 25px;
+  }
+  .inputs {
+    width: 100px;
+  }
+  .text-meio {
+    font-size: 15px;
+  }
+}
+@media (max-width: 790px) {
+  .h1top {
+    font-size: 23px;
+  }
+  .text-meio {
+    font-size: 13px;
+  }
+  .container-primaryc {
+    width: auto;
+  }
+}
+@media (max-width: 426px) {
+  .headerlogoc {
+    display: none;
+    width: 70px;
+    height: 20px;
+  }
+  .logoc {
+    display: none;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    margin-left: 80%;
+    box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.5411764706);
+  }
+  .container-meio {
+    width: 80vw;
+    height: auto;
+  }
+  .h1top {
+    font-size: 17px;
+  }
+  .inputs {
+    width: 70px;
+  }
+  .text-meio {
+    font-size: 12px;
+  }
+  .botoes {
+    height: 25px;
+  }
+  .footer-c {
+    text-align: center;
+    font-size: 12px;
+  }
+}
+@media (max-width: 376px) {
+  .container-meio {
+    width: 80vw;
+    height: auto;
+  }
+  .h1top {
+    font-size: 14px;
+  }
+  .inputs {
+    width: 50px;
+  }
+  .text-meio {
+    font-size: 10px;
+  }
+  .botoes {
+    height: 18px;
+    width: 60px;
+  }
+  .pbotao {
+    font-size: 12px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
